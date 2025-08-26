@@ -1,0 +1,31 @@
+ body, html {
+      height: 100%;
+      margin: 0;
+      background: url('../img/image\ register\ y\ login.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .form-container {
+      background: rgba(0, 27, 50, 0.9);
+      color: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+    }
+    .btn-custom {
+      background-color: #d4a017;
+      border: none;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+    .btn-custom:hover {
+      background-color: #b88a0d;
+    }
+    .highlight-link {
+      color: #d4a017;
+      text-decoration: none;
+    }
+    .highlight-link:hover {
+      text-decoration: underline;
+    }
+

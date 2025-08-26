@@ -1,0 +1,45 @@
+  body, html {
+      height: 100%;
+      margin: 0;
+       background: 
+        linear-gradient(180deg, #00273B 0%, #F3F4F6 74.05%),
+        url('https://images.unsplash.com/photo-1605902711622-cfb43c44367e') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .login-box {
+      fill: #013855;
+      filter: drop-shadow(5px 5px 30px #00273B);
+      border-radius: 20px;
+      padding: 40px;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-control::placeholder {
+      color: #999;
+    }
+
+    .btn-yellow {
+      background-color: #e0ac1c;
+      color: #000;
+      border: none;
+    }
+
+    .btn-yellow:hover {
+      background-color: #c99814;
+    }
