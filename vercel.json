@@ -1,9 +1,48 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/",
-      "destination": "/Home/index.html",
-      "permanent": false
+      "destination": "/Home/index.html"
+    },
+    {
+      "source": "/Home",
+      "destination": "/Home/index.html"
+    },
+    {
+      "source": "/Login",
+      "destination": "/Login/Login.html"
+    },
+    {
+      "source": "/Register",
+      "destination": "/Register/Register.html"
+    },
+    {
+      "source": "/Profile",
+      "destination": "/Profile/Profile.html"
+    },
+    {
+      "source": "/Home/:path*",
+      "destination": "/Home/:path*"
+    },
+    {
+      "source": "/Login/:path*",
+      "destination": "/Login/:path*"
+    },
+    {
+      "source": "/Register/:path*",
+      "destination": "/Register/:path*"
+    },
+    {
+      "source": "/Profile/:path*",
+      "destination": "/Profile/:path*"
+    },
+    {
+      "source": "/img/:path*",
+      "destination": "/img/:path*"
+    },
+    {
+      "source": "/Conect/:path*",
+      "destination": "/Conect/:path*"
     }
   ]
 }
