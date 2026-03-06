@@ -99,7 +99,7 @@ deleteBtn.addEventListener("click", async () => {
 
     await deleteUser(currentUser);
     alert("Cuenta eliminada correctamente.");
-    window.location.href = "../Home/home.html";
+    window.location.href = "../Home/index.html";
   } catch (error) {
     if (backupData) {
       try {
