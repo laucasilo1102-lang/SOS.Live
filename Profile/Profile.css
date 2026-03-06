@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.profile-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("../img/ai-generated-8136169_1920.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 39, 59, 0.66);
+}
+
+.back-circle {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 45px;
+  height: 45px;
+  background: rgba(0, 39, 59, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.back-circle:hover {
+  background: #d4af37;
+  color: #00273b;
+  transform: scale(1.08);
+}
+
+.side-copy {
+  animation: fadeUp 0.55s ease;
+}
+
+.profile-card {
+  background: rgba(0, 39, 59, 0.76);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeUp 0.65s ease;
+}
+
+.input-group-custom {
+  position: relative;
+}
+
+.input-group-custom i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d4af37;
+  z-index: 2;
+}
+
+.input-group-custom input {
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 0 12px 0 40px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group-custom input:hover,
+.input-group-custom input:focus {
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  border: none;
+  color: #00273b;
+  border-radius: 24px;
+  font-weight: 600;
+  padding: 10px 16px;
+}
+
+.btn-gold:hover {
+  background-color: #c49b2f;
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  border-radius: 24px;
+  padding: 10px 16px;
+}
+
+.btn-outline-gold:hover {
+  background: #d4af37;
+  color: #00273b;
+}
+
+.btn-danger-soft {
+  border: 1px solid rgba(220, 53, 69, 0.65);
+  color: #ffbec5;
+  background: rgba(220, 53, 69, 0.15);
+  border-radius: 24px;
+  padding: 10px 16px;
+}
+
+.btn-danger-soft:hover {
+  background: rgba(220, 53, 69, 0.25);
+  color: #fff;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .profile-section {
+    padding-top: 90px;
+  }
+
+  .side-copy {
+    text-align: center;
+  }
+
+  .profile-card {
+    padding: 26px 20px;
+  }
+
+  .actions .btn {
+    width: 100%;
+  }
+}
