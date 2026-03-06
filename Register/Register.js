@@ -1,4 +1,4 @@
-import { registrarUsuario, traducirErrorFirebase } from "../Conect/auth.js";
+import { registrarUsuario, traducirErrorFirebase } from "/Conect/auth.js";
 
 const form = document.getElementById("registerForm");
 const nombreInput = document.getElementById("nombre");
@@ -31,7 +31,7 @@ form.addEventListener("submit", async (e) => {
   try {
     await registrarUsuario({ nombre, email, telefono, nit, password });
     alert("Cuenta creada correctamente. Revisa tu correo para verificarla.");
-    window.location.href = "../Login/Login.html";
+    window.location.href = "/Login/Login.html";
   } catch (error) {
     console.error(error);
     alert(traducirErrorFirebase(error));

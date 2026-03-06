@@ -1,7 +1,7 @@
 import { deleteUser, onAuthStateChanged, sendEmailVerification, signOut, updateEmail } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 import { deleteDoc, doc, getDoc, serverTimestamp, setDoc } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js";
-import { auth, db } from "../Conect/conect.js";
-import { traducirErrorFirebase } from "../Conect/auth.js";
+import { auth, db } from "/Conect/conect.js";
+import { traducirErrorFirebase } from "/Conect/auth.js";
 
 const form = document.getElementById("profileForm");
 const nombreInput = document.getElementById("nombre");
@@ -26,7 +26,7 @@ const cargarDatos = async (user) => {
 
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.href = "../Login/Login.html";
+    window.location.href = "/Login/Login.html";
     return;
   }
 
@@ -79,7 +79,7 @@ form.addEventListener("submit", async (e) => {
 
 logoutBtn.addEventListener("click", async () => {
   await signOut(auth);
-  window.location.href = "../Login/Login.html";
+  window.location.href = "/Login/Login.html";
 });
 
 deleteBtn.addEventListener("click", async () => {
@@ -99,7 +99,7 @@ deleteBtn.addEventListener("click", async () => {
 
     await deleteUser(currentUser);
     alert("Cuenta eliminada correctamente.");
-    window.location.href = "../Home/index.html";
+    window.location.href = "/Home/index.html";
   } catch (error) {
     if (backupData) {
       try {

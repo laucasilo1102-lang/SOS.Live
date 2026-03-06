@@ -1,4 +1,4 @@
-import { loginUsuario, traducirErrorFirebase } from "../Conect/auth.js";
+import { loginUsuario, traducirErrorFirebase } from "/Conect/auth.js";
 
 const form = document.getElementById("loginForm");
 const emailInput = document.getElementById("loginEmail");
@@ -18,7 +18,7 @@ form.addEventListener("submit", async (e) => {
   try {
     await loginUsuario(email, password);
     alert("Inicio de sesion exitoso.");
-    window.location.href = "../Profile/Profile.html";
+    window.location.href = "/Profile/Profile.html";
   } catch (error) {
     console.error(error);
     alert(traducirErrorFirebase(error));
