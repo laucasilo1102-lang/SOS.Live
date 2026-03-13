@@ -32,7 +32,7 @@ body {
 .login-section {
     position: relative;
     height: 100vh;
-    background: url('/img/ai-generated-8136169_1920.png') center/cover no-repeat;
+    background: url('../img/ai-generated-8136169_1920.png') center/cover no-repeat;
     display: flex;
     align-items: center;
 }
