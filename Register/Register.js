@@ -31,7 +31,7 @@ form.addEventListener("submit", async (e) => {
   try {
     await registrarUsuario({ nombre, email, telefono, nit, password });
     alert("Cuenta creada correctamente. Revisa tu correo para verificarla.");
-    window.location.href = "/Login/Login.html";
+    window.location.href = "/Login";
   } catch (error) {
     console.error(error);
     alert(traducirErrorFirebase(error));

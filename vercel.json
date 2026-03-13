@@ -1,29 +1,24 @@
-{
-  "redirects": [
+ {
+  "rewrites": [
     {
       "source": "/",
-      "destination": "/Home/index.html",
-      "permanent": false
+      "destination": "/Home/index.html"
     },
     {
       "source": "/Home",
-      "destination": "/Home/index.html",
-      "permanent": false
+      "destination": "/Home/index.html"
     },
     {
       "source": "/Login",
-      "destination": "/Login/Login.html",
-      "permanent": false
+      "destination": "/Login/Login.html"
     },
     {
       "source": "/Register",
-      "destination": "/Register/Register.html",
-      "permanent": false
+      "destination": "/Register/Register.html"
     },
     {
       "source": "/Profile",
-      "destination": "/Profile/Profile.html",
-      "permanent": false
+      "destination": "/Profile/Profile.html"
     }
   ]
 }

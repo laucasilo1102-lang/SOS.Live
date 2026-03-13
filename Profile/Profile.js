@@ -26,7 +26,7 @@ const cargarDatos = async (user) => {
 
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.href = "/Login/Login.html";
+    window.location.href = "/Login";
     return;
   }
 
@@ -79,7 +79,7 @@ form.addEventListener("submit", async (e) => {
 
 logoutBtn.addEventListener("click", async () => {
   await signOut(auth);
-  window.location.href = "/Login/Login.html";
+  window.location.href = "/Login";
 });
 
 deleteBtn.addEventListener("click", async () => {
@@ -99,7 +99,7 @@ deleteBtn.addEventListener("click", async () => {
 
     await deleteUser(currentUser);
     alert("Cuenta eliminada correctamente.");
-    window.location.href = "/Home/index.html";
+    window.location.href = "/Home";
   } catch (error) {
     if (backupData) {
       try {

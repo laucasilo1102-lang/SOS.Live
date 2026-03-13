@@ -18,7 +18,7 @@ form.addEventListener("submit", async (e) => {
   try {
     await loginUsuario(email, password);
     alert("Inicio de sesion exitoso.");
-    window.location.href = "/Profile/Profile.html";
+    window.location.href = "/Profile";
   } catch (error) {
     console.error(error);
     alert(traducirErrorFirebase(error));
